@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_main_color">
+
+    <RelativeLayout
+        android:id="@+id/layout_TOP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"/>
+
+        <LinearLayout
+            android:id="@+id/viewGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewpager"
+            android:layout_marginTop="-25px"
+            android:gravity="right"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_TOP"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:background="#ef505d">
+
+                <!-- drawableBottom：在text的下方输出一个drawable，如图片。
+                如果指定一个颜色的话会把text的背景设为该颜色，
+                并且同时和background使用时覆盖后者 -->
+                <!-- drawablePadding：设置text与drawable(图片)的间隔，与drawableLeft、
+                drawableRight、drawableTop、drawableBottom一起使用，可设置为负数，
+                单独使用没有效果 -->
+                <TextView
+                    style="@style/text_white_bold_22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="30dp"
+                    android:drawableBottom="@drawable/a90"
+                    android:gravity="center_horizontal"
+                    android:text="自助查询"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="#47c3c8">
+
+                <TextView
+                    android:drawablePadding="10dp"
+                    style="@style/text_white_bold_22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableBottom="@drawable/a84"
+                    android:gravity="center_horizontal"
+                    android:text="资料下载"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:background="#12a3d5">
+
+                <TextView
+                    android:drawablePadding="60dp"
+                    style="@style/text_white_bold_22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableBottom="@drawable/a108"
+                    android:gravity="center_horizontal"
+                    android:text="自考专区"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="3"
+                android:background="#f0ef9a">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:drawablePadding="10dp"
+                    style="@style/text_white_bold_22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/a78"
+                    android:gravity="center_vertical"
+                    android:text="我要报名"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
